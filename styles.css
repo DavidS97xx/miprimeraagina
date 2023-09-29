@@ -151,16 +151,15 @@ main{
     font-size: 36px;
 }
 
-
 .seccion-2 img{
     width: 100%;
     padding: 20px;
+    background-size: cover;
 
 }
 
 .seccion-4 h3{
     font-size: 24px;
-    width: 710px;
     height: 30px;
     text-align: center;
     margin: 15x;
@@ -184,18 +183,17 @@ main{
 
   .seccion-4 h3{
     font-size: 20px;
-    width: 710px;
     height: 30px;
     text-align: center;
     margin: 10x;
-    display:flex;
-    padding: 10px 20px 10px 20px;
 }
 
   .seccion-4{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
-    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
   }
   .seccion-4 img{
 
@@ -207,6 +205,7 @@ main{
 
   .seccion-4 p{
     font-size: 18px;
+    padding: 10px 5px 20px 5px;
   }
   
 }
