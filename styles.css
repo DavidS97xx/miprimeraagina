@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.627);
+    width: 100%;
+    border: 5px solid rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    position:fixed
+   
+}
+header h1{
+    padding: 30px;
+    margin: 25px;
+    padding: 0 50px;
+    display: inline-block;
+    font-size: 50px;
+    
+}
+
+header nav{
+    float: right;
+}
+
+.seccion-1 ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.seccion-1 a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+.seccion-1 a:hover{
+    color: rgb(0, 251, 255);
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: #eeeeee;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px){
+    header {
+        background-color: rgb(0, 0, 0);
+      }
+
+    header h1{
+        padding: 30px;
+        margin: 25px;
+        padding: 0 50px;
+        display: inline-block;
+        font-size: 22px;
+
+    }
+    
+    .checkbtn{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        float: right;
+        line-height: 100px;
+        margin-right: 40px;
+        margin-top: -85px;
+        cursor: pointer;
+        display: block;
+        z-index: 1;
+    }
+    
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.848);
+        top: 115px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+      }
+    
+      #check:checked ~ ul {
+        left: 0;
+        display: block;
+      }
+    
+      #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+    
+      #encabezado nav ul li a {
+        font-size: 20px;
+      }
+    
+      #check:checked ~ .checkbtn {
+        color: rgb(161, 210, 255);
+      }
+}
+
+
+
+/* CENTRO */
+
+main{
+    background-color: rgb(161, 210, 255);
+    border: 5px solid white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    padding: 180px 40px 60px 40px;
+    width: 100%;
+    text-align: center;
+  
+}
+
+.section-principal p{
+    padding: 10px 150px 10px 150px;
+}
+
+@media (max-width: 768px) {
+    .section-principal p{
+        padding: 10px 20px 10px 20px;
+    }
+    
+}
+.section-principal img{
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.section-principal h3{
+    font-size: 36px;
+}
+
+
+.seccion-2 img{
+    width: 100%;
+    padding: 20px;
+
+}
+
+.seccion-4 h3{
+    font-size: 24px;
+    width: 710px;
+    height: 30px;
+    text-align: center;
+    margin: 15x;
+}
+
+.seccion-4{
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.seccion-4 img{
+
+  width: 300px;
+  height: 250px;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+footer{
+    clear: both;
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    border: 5px solid rgb(161, 210, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin: 20px;
+    padding: 5px 30px 20px 30px;
+    text-align: center;
+}
+
+
+ul.redes li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.fuente-clara {color: #eeeeee;}
+
+.fuente-oscura {color: #22211f;}
+
+.fuente-acento {color: #b59a61;}
+
+/* ------------- Encabezado Contacto ------------- */
+  
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  .alertas{
+    color: #ff0000;
+    text-align: center;
+  }
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row input[type="email"] {
+        width: 250px;
+        height: initial;
+      }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+
+    .form-row textarea {
+        width: 250px;
+      }
+
+      .form-row button {
+        margin-left: 120px;
+      }
+
+  }

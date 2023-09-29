@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentos Fotograficos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="encabezado">
+        <h1 class="fuente-acento">Momentos Fotográficos</h1>
+        <section class="seccion-1">
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="index-personal.html#home">Inicio</a>
+                    <li><a href="index-personal.html#work">Galeria</a></li>
+                    <li><a href="https://homemuebles.co/galeria-de-imagenes/">Comunidad</a></li>
+                    <li><a href="index-personal.html#about">Acerca de Nosotros</a></li>
+                    <li><a href="index-personal.html#contact">Contacto</a></li>            
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main> 
+        <section class="section-principal">
+            <h3 class="fuente-oscura">Bienvenidos</h3>
+            <div>
+                <p class="fuente-oscura">En esta página web encontrarás fotografías de personas del común, aquí podrás compartir todo tipo de arte, podrás admirar y comentar las fotografías de los miembros, así que ¡adelante! Comparte las fotos que capturaste hoy!!!</p>
+            </div>
+            <img src="img\oso.jpg" alt="Oso polar hambrieto"/>
+        </section>
+
+        <section class="seccion-2">
+            <div>
+                <img src="img\Yosemite.jpg" alt="Yosemite National Park"/>
+            </div>
+        </section>
+        <h2 class="fuente-oscuro">Clasificación </h2>
+        <section class="seccion-4">
+     
+            
+            <div>
+                <h3 class="fuente-oscuro">Flores </h3>
+                <img src="img/flor.jpg" alt="Flor Jardin Bontanico"/>
+                <p class="fuente-oscura">Prueba 1</p>
+            </div>
+
+            <div> 
+                <h3 class="fuente-oscuro">Paisajismo </h3>
+                <img src="img/llanura.jpg" alt="Laguna de Apiay Meta"/>
+                <p class="fuente-oscura">Prueba 2</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Contacto</h1>
+      <p><em>¡Esperamos tu consulta!</em></p>
+
+      <form action="" method="get" class="formulario" id="form"> 
+        <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+        </div>
+
+        <div class="form-row">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="pepe@gmail.com"
+                  required
+                />
+        </div>
+
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje"></textarea>
+        </div>
+        
+        <div class="form-row">
+            <button>Enviar</button>
+        </div>
+        <p class="alertas" id="alertas"></p>
+      </form>
+
+
+        <h3 class="fuente-oscuro">Redes Sociales</h3>
+        <nav>
+            <ul class="redes">
+                <li><a href="https://www.facebook.com/david.martinez.GD/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/xxdavidsilvaxx/">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
