@@ -180,6 +180,36 @@ main{
   margin: 10px;
 }
 
+@media (max-width: 768px) {
+
+  .seccion-4 h3{
+    font-size: 20px;
+    width: 710px;
+    height: 30px;
+    text-align: center;
+    margin: 10x;
+    display:flex;
+    padding: 10px 20px 10px 20px;
+}
+
+  .seccion-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    
+  }
+  .seccion-4 img{
+
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  .seccion-4 p{
+    font-size: 18px;
+  }
+  
+}
 footer{
     clear: both;
     background-color: rgb(255, 255, 255);
